@@ -4,8 +4,26 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+/* font-family: 'Lobster', cursive;
+ font-family: 'K2D', sans-serif;
+ font-family: 'Cuprum', sans-serif;
+ font-family: 'Monoton', cursive;
+ font-family: 'Didact Gothic', sans-serif; */
+
 body {
   padding-top: 54px;
+  background-image: url("https://s3.amazonaws.com/aaron-c-miller-portfolio/bluebrick.png");
+  font-family: "K2D", sans-serif;
+}
+
+.navbar-custom {
+  color: #ffffff;
+  background-color: #ff7f50;
+}
+
+.navbar-custom-contact {
+  color: #ffffff;
+  background-color: #ff7f50;
 }
 
 @media (min-width: 992px) {
@@ -22,8 +40,124 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* background-color: aliceblue; */
+  background-color: #76aad6;
+  /* opacity: 0.6; */
 }
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+/* .a {
+  vertical-align: middle;
+} */
+.carousel-button {
+  background-color: #76aad6;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  font-family: "K2D", sans-serif;
+}
+
+.carousel-button:hover {
+  color: #ff542a;
+  text-decoration: none;
+}
+
+.home-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff7f50;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.home-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.home-button:hover span {
+  padding-right: 25px;
+}
+
+.home-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home-h1 {
+  font-family: "K2D", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px #555;
+  color: #ff7f50;
+}
+.home-h2 {
+  font-family: "Lobster", cursive;
+  font-size: 225%;
+  /* font-weight: bold; */
+  text-shadow: 1px 3px 4px #555;
+  color: #ffffff;
+  letter-spacing: 2px;
+  background-color: #76aad6;
+  margin-top: 5px;
+  /* color: #ff7f50; */
+}
+.home-h3 {
+  font-family: "K2D", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 3px 4px #555;
+  color: #ff7f50;
+}
+
+.home-img {
+  padding: 1px;
+  border: 2px solid #76aad6;
+  background-color: #76aad6;
+}
+
+.footer-custom {
+  color: #ffffff;
+  background-color: transparent;
+  color: #ff542a;
+}
+
+.footer-custom-contact {
+  color: #ffffff;
+  background-color: #ff7f50;
+}
+
+.image-with-caption {
+  float: left;
+  font-size: 110%;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  font-weight: bolder;
+  color: #ff542a;
+}
+
+.img-ball {
+  width: 700;
+  height: 400;
+  justify-content: center;
 }
