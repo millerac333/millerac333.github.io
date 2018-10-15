@@ -61,6 +61,16 @@ body {
   width: 150px;
   font-family: "K2D", sans-serif;
 }
+.carousel-button-2 {
+  background-color: #ff7f50;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  font-family: "K2D", sans-serif;
+}
 
 .carousel-button:hover {
   color: #ff542a;
