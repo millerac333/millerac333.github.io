@@ -85,18 +85,15 @@
           One of two columns
         </div>
       </div> -->
-
-
-
-
     <div class="row justify-content-around">
       <div class="col-lg-8 mb-4">
         <h3 style="color:#f4511e">Email me at aaron.c.miller.333@gmail.com</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form action="https://formspree.io/aaron.c.miller.333@gmail.com" method="POST" name="sentMessage" id="contactForm"
+          novalidate>
           <div class="control-group form-group">
             <div class="controls">
               <label>Name:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
@@ -105,13 +102,14 @@
           <div class="control-group form-group">
             <div class="controls">
               <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              <input type="email" class="form-control" id="email" name="email" required
+                data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>Message:</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required
+              <textarea rows="10" cols="100" class="form-control" name="message" id="message" required
                 data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
@@ -123,7 +121,7 @@
       </div>
       <div class="col-lg-8 mb-4">
         <div class="col d-flex justify-content-center">
-          <a href="https://s3.amazonaws.com/aaron-c-miller-portfolio/Aaron-C-Miller-Resume.pdf">
+          <a href="https://s3.amazonaws.com/aaron-c-miller-portfolio/AaronCMillerResume.pdf">
 
             <button type="button" class="home-button" href=""><span>Download
                 Resume</span></button></a>
