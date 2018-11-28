@@ -87,13 +87,13 @@
       </div> -->
     <div class="row justify-content-around">
       <div class="col-lg-8 mb-4">
-        <h3 style="color:#f4511e">Email me at aaron.c.miller.333@gmail.com</h3>
-        <form action="https://formspree.io/aaron.c.miller.333@gmail.com" method="POST" name="sentMessage" id="contactForm"
-          novalidate>
+        <h3 style="color:#f4511e">Email me at millerac333@gmail.com</h3>
+        <form action="https://formspree.io/millerac333@gmail.com" method="POST">
+         {% comment %} name="sentMessage" id="contactForm" novalidate> {% endcomment %}
           <div class="control-group form-group">
             <div class="controls">
               <label>Name:</label>
-              <input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" class="form-control" name="name" id="form-name" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
@@ -102,18 +102,18 @@
           <div class="control-group form-group">
             <div class="controls">
               <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" name="email" required
+              <input type="email" class="form-control" id="form-email" name="email" required
                 data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>Message:</label>
-              <textarea rows="10" cols="100" class="form-control" name="message" id="message" required
+              <textarea rows="10" cols="100" class="form-control" name="message" id="form-message" required
                 data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
-          <div id="success"></div>
+          <div id="form-success"></div>
           <!-- For success/fail messages -->
           <button type="submit" class="btn btn-primary" style="background-color: #76aad6" id="sendMessageButton">Send
             Message</button>
